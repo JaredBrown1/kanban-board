@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Navbar = () => {
 	return (
-		<div className="flex flex-shrink-0 justify-between w-[375px] h-[64px] pt-4">
+		<div className="flex flex-shrink-0 justify-between w-[375px] h-[64px] pt-2">
 			<div className="flex cursor-pointer h-[25px]">
 				<div className="pl-4 pt-4">
 					<Image src="/logo-mobile.svg" width={24} height={25} alt="logo" />
@@ -20,7 +20,7 @@ const Navbar = () => {
 					</span>
 				</h1>
 			</div>
-			<div className="flex p-4">
+			<div className="flex pl-4 pt-4 pb-4 pr-1">
 				<button className="w-[48px] h-[32px] bg-[#635FC7] rounded-2xl pl-[19px] opacity-[0.25]">
 					<span>
 						<Image
@@ -34,7 +34,7 @@ const Navbar = () => {
 				<div className="p-2">
 					<Image
 						src="/icon-vertical-ellipsis.svg"
-						width={3}
+						width={4}
 						height={16}
 						alt="user"
 					/>
