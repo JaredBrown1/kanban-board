@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import Navbar from "@/components/navbar/Navbar";
+import Navbar from "@/app/components/navbar/Navbar";
 
 export const metadata = {
 	title: "Kanban Board App",

@@ -20,7 +20,7 @@ const Navbar = () => {
 					</span>
 				</h1>
 			</div>
-			<div className="flex pl-4 pt-4 pb-4 pr-1">
+			<div className="flex pt-4 pb-4">
 				<button className="w-[48px] h-[32px] bg-[#635FC7] rounded-2xl pl-[19px] opacity-[0.25]">
 					<span>
 						<Image

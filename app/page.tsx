@@ -1,9 +1,6 @@
 import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 import { cookies } from "next/headers";
-import Link from "next/link";
-import LogoutButton from "../components/LogoutButton";
-import SupabaseLogo from "../components/SupabaseLogo";
-import NextJsLogo from "../components/NextJsLogo";
+import Board from "./components/board/Board";
 
 export const dynamic = "force-dynamic";
 
@@ -15,8 +12,13 @@ export default async function Index() {
 	} = await supabase.auth.getUser();
 
 	return (
-		<div className="w-[375px]">
-			{/* <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
+		<div className="w-[375px] flex justify-center items-center min-h-screen">
+			<Board />
+		</div>
+	);
+}
+{
+	/* <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
 				<div className="w-full max-w-4xl flex justify-between items-center p-3 text-sm text-foreground">
 					<div />
 					<div>
@@ -35,7 +37,5 @@ export default async function Index() {
 						)}
 					</div>
 				</div>
-			</nav> */}
-		</div>
-	);
+			</nav> */
 }
