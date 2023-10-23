@@ -23,3 +23,8 @@ export default function RootLayout({
 		</html>
 	);
 }
+
+// Ideal component layout for board:
+// <Board> -> <Column> -> <TaskCard>
+
+// Boards will have their own columns and tasks unique to them

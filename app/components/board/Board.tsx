@@ -1,5 +1,5 @@
 import TaskCard from "./tasks/TaskCard";
-let data = false;
+let data = true;
 
 const Board = () => {
 	if (!data) {
@@ -16,6 +16,16 @@ const Board = () => {
 	} else {
 		return (
 			<div className="mr-20">
+				<h1 className="flex p-4">
+					{/* color will be dynamic */}
+					<div className="bg-[#49C4E5] h-[15px] w-[15px] rounded-full mr-4 mt-1" />{" "}
+					{/* column names will be dynamic */}
+					TODO (1)
+				</h1>
+				{/* task cards will be dynamic */}
+				<TaskCard />
+				<TaskCard />
+				<TaskCard />
 				<TaskCard />
 			</div>
 		);
