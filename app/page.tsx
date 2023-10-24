@@ -12,7 +12,7 @@ export default async function Index() {
 	} = await supabase.auth.getUser();
 
 	return (
-		<div className="w-[375px] flex justify-center items-center">
+		<div className="flex justify-center items-center">
 			<Board />
 		</div>
 	);

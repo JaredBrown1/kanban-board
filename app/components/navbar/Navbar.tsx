@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Navbar = () => {
 	return (
-		<div className="flex flex-shrink-0 justify-between w-[375px] h-[64px] pt-2">
+		<div className="flex flex-shrink-0 justify-between w-screen h-[64px] pt-2 bg-white">
 			<div className="flex cursor-pointer h-[25px]">
 				<div className="pl-4 pt-4">
 					<Image src="/logo-mobile.svg" width={24} height={25} alt="logo" />
